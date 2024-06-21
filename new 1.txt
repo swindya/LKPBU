@@ -1,0 +1,31 @@
+$noret = $noretur;
+$returke = $noretur;
+
+if ($returke==1)
+	$returstr = "gudanggaramretur1";
+else if ($returke==2)
+	$returstr = "gudanggaramretur2";
+else if ($returke==3)
+	$returstr = "gudanggaramretur3";
+else if ($returke==4)
+	$returstr = "gudanggaramretur4";
+
+$bulan = array('Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember');
+# query the users table for name and surname 
+$query = "SELECT * FROM " . $returstr . " WHERE perusahaanID=" . $perushid . " AND tahun=" . $tahunbuku . ";";
+//echo $query;
+$row_cnt = 0;
+$i = 0;
+$counti = 0;
+$result = mysqli_query($link, $query);
+if ($result) {
+ /* determine number of rows result set */
+    $row_cnt = $result->num_rows;
+}
+if ($row_cnt>0) {
+	$i = 0;
+	while ($row = mysqli_fetch_array ($result, MYSQLI_ASSOC)) {
+		$i++;
+	}
+}
+$counti = $i;

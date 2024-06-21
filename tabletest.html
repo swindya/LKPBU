@@ -1,0 +1,78 @@
+<html>
+<body>
+
+
+	<table style="text-align: left; margin-left: 20px; margin-right: auto; margin-top: 0px;" width="800px" border="0" cellspacing="0" cellpadding="0">
+		<thead>
+			<tr height="30px">
+				<td colspan="2" style="padding-left: 10px; text-align: left; font-size: 12; height: 30px; width=100%">
+					<p><h2><font face="arial" color="black">Data tidak/belum ada</font></h2></p>
+				</td>
+			</tr>
+		</thead>
+	</table>
+
+	<form enctype="multipart/form-data" name="myuploadretur" action="susulanupload.php" method="post">
+		<table style="text-align: left; margin-left: 20px; margin-right: auto; margin-top: 0px;" width="400px" border="1" cellspacing="0" cellpadding="0">
+			<thead>
+				<tr height="10px" valign="top">
+					<td style="padding-left: 10px; padding-top: 10px; text-align: left; font-size: 12; width=400px">
+					</td>
+				</tr>
+				<tr height="50px" valign="top">
+					<td style="padding-left: 10px; padding-top: 10px; text-align: left; font-size: 12; height: 30px; width=400px">
+						<h2><font face="arial" color="black">Silahkan Upload File Susulan:</font></h2>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr height="30px">
+					<td style="padding-left: 10px; text-align: left; font-size: 12"><input name="transfer1[]" type="file" maxlength="30"/></td>
+				</tr>
+				<tr height="30px">
+					<td style="padding-left: 10px; text-align: left; font-size: 12"><input name="transfer1[]" type="file" maxlength="30"/></td>
+				</tr>
+				<tr height="30px">
+					<td style="padding-left: 10px; text-align: left; font-size: 12"></td>
+				</tr>
+				<tr height="30px">
+					<td colspan="2" style="padding-left: 10px; text-align: left;">
+						<a href="" class="medium button orange" onclick="document.myuploadsusulan.submit(); return false;">Upload</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+<table style="text-align: left; margin-left: 10px; margin-right: auto; margin-top: auto;" width="240px" border="0" cellspacing="0" cellpadding="0">
+	<thead>
+	<tr height="30px">
+		<td colspan="2" style="padding-left: 10px; text-align: left; font-size: 12; width=240px">
+		</td>
+	</tr>
+	</thead>
+	<tbody>
+	<tr height="30px">
+		<td style="padding-left: 10px; text-align: left; font-size: 13; width=120px">
+			<input type="radio" name="radiog_dark" id="radio1" class="css-checkbox" onchange="window.location.href='retur.php'">
+			<label for="radio1" class="css-label radGroup2">Retur</label>
+		</td>
+		<td style="padding-left: 10px; text-align: left; font-size: 13; width=120px">
+			<input type="radio" name="radiog_dark" id="radio2" class="css-checkbox" checked="checked" onchange="window.location.href='susulan.php'">
+			<label for="radio2" class="css-label radGroup2">Susulan</label>
+		</td>
+	</tr>
+	<tr height="30px">
+		<td colspan="2" style="padding-left: 10px; text-align: left; font-size: 13; width=240px">
+		</td>
+	</tr>
+	<tr height="30px">
+		<td colspan="2" style="padding-left: 10px; text-align: left; font-size: 13; width=240px">
+			<a href="" class="medium button orange" onclick="viewform(this.form)">Tambah Data</a>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+
+</body>
+</html>
